@@ -79,7 +79,7 @@ p {
   line-height: 40px;
   letter-spacing: 0px;
   text-align: left;
-  color: #0f0529;
+  /* color: #0f0529; */
   padding: 0 20px;
   margin: 8px 20px;
 }
@@ -178,16 +178,39 @@ section:hover {
 }
 
 .renglon {
+  border-bottom: 3px solid #0f0529;
+}
+
+.renglon-responsive {
   display: flex;
   justify-content: space-between;
+  /* flex-direction: column; */
   align-items: center;
-  border-bottom: 3px solid #0f0529;
   padding: 1rem 0;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  font-size: 4rem !important;
+  transition: transform 0.3s ease; /* Animación para el giro del ícono */
+  margin: 8px 20px;
+}
+
+.renglon-content {
+  display: none; /* Ocultar el contenido por defecto */
+  padding-top: 0.5rem;
+}
+
+.renglon.active .renglon-content {
+  display: block; /* Mostrar el contenido cuando la sección está activa */
+}
+
+.renglon.active .dropdown-icon {
+  transform: rotate(180deg); /* Girar el ícono cuando la sección está activa */
 }
 
 .renglon-text {
  text-align: right;
-
 }
 
 .highlight1:hover {
@@ -264,8 +287,38 @@ section:hover {
   #seccion1, #seccion2, #seccion3, #seccion4 {
     grid-column: 1/2;
     grid-row: auto;
+    width: 100vw;
     height: auto;
     padding-top: 2.8rem;
+    text-align: left;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -2.2px;
+    font-style: normal;
+    text-align: left;
+    color: #0f0529;
+    margin: 8px 20px;
+  }
+
+  h5 {
+    margin: 0;
+    padding: 10px;
+    font-weight: 300;
+  }
+
+  #nav-seccion1 {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .material-symbols-outlined {
+    font-size: 60px !important;
+    cursor: pointer;
   }
 
   #seccion3 {
@@ -278,12 +331,27 @@ section:hover {
   #seccion4 {
     grid-row: 3/4;
   }
+
+  .renglon-responsive {
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  .highlight1 {
+    display: contents;
+  }
+
+  .nav-seccion2 {
+    display: contents;
+  }
 }
 
 footer {
-  background-color: #004751;
+  display: flex;
+  background-color: transparent;
+  color: #ffffff;
   text-align: center;
-  position: relative;
+  justify-content: end;
+  position: fixed;
   width: 100%;
   bottom: 0;
 }

@@ -6,6 +6,7 @@
     <title>Doc001</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <main class="container-view">
@@ -14,16 +15,16 @@
           <div>
             <div>
               <h2>
-                Colaboración con <strong>thealam.co</strong>
+                Colaboración <strong>thealam.co</strong>
               </h2>
             </div>
             <div class="space-s1">
               <h3>
                 contenido
                 <br>
-                web design
+                web design &
                 <br>
-                web development
+                development
               </h3>
             </div>
           </div>
@@ -43,7 +44,6 @@
         <navbar id="nav-seccion1"/>
           <h2>thealam.co</h2>
           <span onclick="goBack()" class="material-symbols-outlined">close
-
           </span>
         </navbar>
         <h5>
@@ -63,44 +63,50 @@
           </span>
         </navbar>
         <div class="renglon highlight1">
-          <h5>Titulo</h5>
-          <p>contenido contenido contenido</p>
-        </div>
-        <div class="renglon highlight2">
-          <h5>Titulo</h5>
-          <p>contenido contenido contenido</p>
-        </div><div class="renglon highlight3">
-          <div class="renglon-text">
-            <h5>Titulo</h5>
+          <div class="renglon-responsive">
+            <h5>Diseño web</h5>
+            <span class="material-icons dropdown-icon">expand_more</span>
           </div>
-          <div>
-            <p>contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido </p>
+          <div class="renglon-content">
+            <p>Queremos lograr una web atractiva, minimalista, en la que de manera fluída sea sencillo interactuar y poder ver el contenido. La idea es poder mostrar los proyectos actuales y que se han ido haciendo, como por ejemplo:</p>
+            <ul>
+              <p>Locales abiertos y proyecciones.</p>
+              <p>Colabolarociones y como han surgido.</p>
+              <p>Marcas propias, como los vinos</p>
+              <p>Y por último faltaría aclarar e-comm, abrir una sección sold-out para exhibir.</p>
+            </ul>
           </div>
-        </div><div class="renglon highlight4">
-          <h5>Titulo</h5>
-          <p>contenido contenido contenido</p>
         </div>
-
       </div>
 
-      <div id="seccion3-content" class="content-view">
-        <navbar id="nav-seccion2"></navbar>
-        <h2>Vista de seccion 3</h2>
-        <h5>contenido</h5>
-        <button onclick="goBack()">volver</button>
-      </div>
       <div id="seccion4-content" class="content-view">
-        <navbar id="nav-seccion3"></navbar>
-        <h2>Vista de seccion 4</h2>
-        <p>contenido</p>
-        <button onclick="goBack()">volver</button>
+        <navbar class="nav-seccion2">
+          <div class="nav-title">
+            <h2>thealam.co</h2>
+          </div>
+          <div class="nav-span">
+            <h2>Goals</h2>
+            <span onclick="goBack()" class="material-symbols-outlined">close
+          </div>
+          </span>
+        </navbar>
+        <div class="renglon highlight1">
+          <div class="renglon-responsive">
+            <h5>Primero lo primer, contenido</h5>
+            <span class="material-icons dropdown-icon">expand_more</span>
+          </div>
+        </div>
       </div>
+
+
+
     </main>
     <footer>
       <div>
-        <h5>ss01</h5>
+        <p>doc01</p>
       </div>
     </footer>
     <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
